@@ -12,11 +12,21 @@
     <script>
         let container = document.querySelector(".container");
 
+        
         for (let i = 0; i < 256; i++) {
-            const div = document.createElement("div");
+            let div = document.createElement("div");
             div.classList.add("my-div");
             container.appendChild(div);
         }
+
+        let allDivs = document.querySelectorAll(".my-div");
+        allDivs.forEach((div) => {
+            div.addEventListener("mouseover", () => {
+            div.classList.add("colored-div");
+        });
+        });
+
+
 
     </script>
     

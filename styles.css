@@ -9,6 +9,10 @@
     border: 2px solid brown;
 }
 
+.colored-div {
+    background-color: green;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
