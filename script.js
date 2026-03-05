@@ -9,6 +9,9 @@ function createGrid(grid, squaresPerSide) {
     width = 650 / squaresPerSide;
     squareDiv.style.width = width + "px";
     container.appendChild(squareDiv);
+    squareDiv.addEventListener("mouseover", () => {
+    squareDiv.classList.add("hover");
+    })
 }
 }
 
@@ -32,11 +35,4 @@ function updateGrid(squaresPerSide) {
 const btnChange = document.querySelector(".btn-change");
 btnChange.addEventListener("click", updateGrid);
 
-
-const divs = document.querySelectorAll(".square");
-divs.forEach((div) => {
-    div.addEventListener("mouseover", () => {
-    div.classList.add("hover");
-});
-}) 
 
